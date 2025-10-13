@@ -1,7 +1,7 @@
 import { Theme } from '@radix-ui/themes';
 import "@radix-ui/themes/styles.css";
 import { DialogProvider } from 'react-dialog-hub';
-import './app.css';
+import './App.css';
 import { MUIDialogsSection } from './dialogs/mui';
 import { PlainDialogsSection } from './dialogs/plain';
 import { RadixDialogsSection } from './dialogs/radix';
