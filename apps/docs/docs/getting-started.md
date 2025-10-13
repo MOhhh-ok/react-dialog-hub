@@ -1,16 +1,16 @@
 # Getting Started
 
-`react-dialog-hub` の基本的な導入と、Radix/MUI/素のダイアログの例を紹介します。詳細な API は左メニューの「API」を参照してください。
+This guide covers the basic setup and examples for Radix, MUI, and vanilla dialogs. For the full API, see the "API" section in the sidebar.
 
-## インストール
+## Installation
 
 ```bash
 pnpm add react-dialog-hub
 ```
 
-## プロバイダの設置
+## Place the Provider
 
-アプリのルートで `DialogProvider` を配置します。
+At the root of your app, wrap with `DialogProvider`.
 
 ```tsx
 import { DialogProvider } from 'react-dialog-hub';
@@ -24,9 +24,9 @@ export function Root() {
 }
 ```
 
-## ダイアログの呼び出し
+## Invoke a Dialog
 
-`useDialog()` の `show()` を使って、任意のダイアログコンポーネントを表示します。コンポーネントには `resolve/reject` が自動で渡され、`resolve(result)` を呼ぶと Promise が解決されます。
+Use `show()` from `useDialog()` to display any dialog component. The component automatically receives `resolve` and `reject`. Calling `resolve(result)` resolves the Promise.
 
 ```tsx
 import { useDialog } from 'react-dialog-hub';
@@ -34,7 +34,7 @@ import { useDialog } from 'react-dialog-hub';
 function Page() {
   const { show } = useDialog();
   const openConfirm = async () => {
-    const ok = await show(ConfirmDialog, { message: '続行しますか？' });
+    const ok = await show(ConfirmDialog, { message: 'Proceed?' });
     if (ok) {
       // do something
     }
@@ -43,7 +43,7 @@ function Page() {
 }
 ```
 
-### Confirm の例（素の実装）
+### Confirm Example (vanilla)
 
 ```tsx
 type ConfirmProps = { message: string };
@@ -59,10 +59,10 @@ function ConfirmDialog({ message, resolve, reject }: ConfirmProps & { resolve: (
 }
 ```
 
-UI ライブラリ（Radix/MUI など）は、既存のダイアログコンポーネントに `resolve/reject` を渡して呼び出すだけです。
+For UI libraries like Radix and MUI, pass through `resolve/reject` to your existing dialog component and call them accordingly.
 
 ---
 
-次は、詳細 API を「API」セクションで確認してください。
+Next, check the API section for details.
 
 
