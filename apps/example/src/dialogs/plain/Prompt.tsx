@@ -1,7 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import { useDialog, type DialogProps } from "react-dialog-hub";
 
-export function Prompt(props: DialogProps<{ message: string, defaultValue?: string }, string>) {
+export type PromptProps = {
+  message: string;
+  defaultValue?: string;
+}
+
+export function Prompt(props: DialogProps<PromptProps, string>) {
   const { resolve, reject, message } = props;
   const [value, setValue] = useState(props.defaultValue ?? '');
   const ref = useRef<HTMLDialogElement>(null);
