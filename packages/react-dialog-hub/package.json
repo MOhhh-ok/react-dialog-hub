@@ -20,5 +20,19 @@
     "@types/react": "^19.1.16",
     "typescript": "5.9.2"
   },
-  "packageManager": "pnpm@9.0.0"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohhh-ok/react-dialog-hub.git"
+  },
+  "homepage": "https://mohhh-ok.github.io/react-dialog-hub/",
+  "packageManager": "pnpm@9.0.0",
+  "keywords": [
+    "react",
+    "dialog",
+    "modal",
+    "mui",
+    "radix",
+    "vanilla"
+  ]
 }
