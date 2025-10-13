@@ -22,7 +22,7 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'your-org', // Update as needed
+  // organizationName: 'your-org', // Update as needed
   projectName: 'react-dialog-hub',
 
   onBrokenLinks: 'throw',
@@ -81,13 +81,13 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'docs',
           position: 'left',
           label: 'Docs',
         },
         { to: '/docs/api', label: 'API', position: 'left' },
         {
-          href: 'https://github.com/your-org/react-dialog-hub',
+          href: 'https://github.com/mohhh-ok/react-dialog-hub',
           label: 'GitHub',
           position: 'right',
         },

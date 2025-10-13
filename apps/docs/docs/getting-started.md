@@ -47,8 +47,9 @@ function Page() {
 
 ```tsx
 type ConfirmProps = { message: string };
+type ConfirmResult = boolean;
 
-function ConfirmDialog({ message, resolve, reject }: ConfirmProps & { resolve: (v: boolean) => void; reject: (e?: unknown) => void }) {
+function ConfirmDialog({ message, resolve, reject }: DialogProps<ConfirmProps, ConfirmResult>) {
   return (
     <div role="dialog">
       <p>{message}</p>
