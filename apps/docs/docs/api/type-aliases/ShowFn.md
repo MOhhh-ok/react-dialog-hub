@@ -2,7 +2,7 @@
 
 > **ShowFn** = \<`TProps`, `TResult`, `TError`\>(`comp`, `props?`) => `Promise`\<`TResult`\>
 
-Defined in: [types.ts:19](https://github.com/MOhhh-ok/react-dialog-hub/blob/d2e49ee61d8e2930c01aedba0f7fcf6d215c4a67/packages/react-dialog-hub/src/types.ts#L19)
+Defined in: [types.ts:19](https://github.com/MOhhh-ok/react-dialog-hub/blob/c5e3c43b911f4249d29d79fe042fbb21d3e67650/packages/react-dialog-hub/src/types.ts#L19)
 
 ## Type Parameters
 

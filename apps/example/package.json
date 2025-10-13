@@ -1,5 +1,5 @@
 {
-  "name": "example",
+  "name": "@respo/example",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -16,7 +16,8 @@
     "@radix-ui/themes": "^3.2.1",
     "react": "^19.1.1",
     "react-dialog-hub": "workspace:*",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "type-check": "tsc --noEmit"
   },
   "devDependencies": {
     "@types/node": "^24.6.0",
