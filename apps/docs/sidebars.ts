@@ -17,6 +17,7 @@ const sidebars: SidebarsConfig = {
     // High-level entry
     'intro',
     'getting-started',
+    'comparison',
 
     // Examples (explicit order)
     {

@@ -2,7 +2,7 @@
 
 > **DialogProvider**(`__namedParameters`): `Element`
 
-Defined in: [provider.tsx:5](https://github.com/MOhhh-ok/react-dialog-hub/blob/c5e3c43b911f4249d29d79fe042fbb21d3e67650/packages/react-dialog-hub/src/provider.tsx#L5)
+Defined in: [provider.tsx:5](https://github.com/MOhhh-ok/react-dialog-hub/blob/5673faacf88e76b0990b2083c26229d9de0bb4ca/packages/react-dialog-hub/src/provider.tsx#L5)
 
 ## Parameters
 
