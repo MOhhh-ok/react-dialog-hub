@@ -2,7 +2,7 @@
 
 > **DialogComponent**\<`TProps`, `TResult`, `TError`\> = (`props`) => `React.ReactNode`
 
-Defined in: [types.ts:9](https://github.com/MOhhh-ok/react-dialog-hub/blob/44b10d0519bb12294bd933ab6943159e58a69c47/packages/react-dialog-hub/src/types.ts#L9)
+Defined in: [types.ts:9](https://github.com/MOhhh-ok/react-dialog-hub/blob/d2e49ee61d8e2930c01aedba0f7fcf6d215c4a67/packages/react-dialog-hub/src/types.ts#L9)
 
 ## Type Parameters
 

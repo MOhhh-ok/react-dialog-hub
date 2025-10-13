@@ -5,11 +5,15 @@
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch"
+    "dev": "tsc --watch",
+    "prepublishOnly": "pnpm build"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^19.2.0"
   },
   "devDependencies": {
