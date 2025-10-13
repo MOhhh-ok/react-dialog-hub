@@ -4,15 +4,21 @@ import type { DialogBase, DialogComponent, DialogContextValue, StackItem } from 
 
 export function DialogProvider({ children }: { children: React.ReactNode }) {
   const [stack, setStack] = useState<StackItem[]>([]);
-  const show = useCallback(<P,>(
-    component: DialogComponent<P>,
-    props?: Omit<P, keyof DialogBase>
+  const show = useCallback(<TProps, TResult, TError>(
+    component: DialogComponent<TProps, TResult, TError>,
+    props?: Omit<TProps, keyof DialogBase<TResult, TError>>
   ) => {
     const id = Date.now() + Math.random();
-    return new Promise<void>((resolve, reject) => {
+    return new Promise<TResult>((resolve, reject) => {
       setStack((s) => [
         ...s,
-        { id, component, props: props ?? {}, resolve, reject },
+        {
+          id,
+          component: component as any,
+          props: props ?? {},
+          resolve: resolve as any,
+          reject: reject as any
+        },
       ]);
     });
   }, []);
@@ -29,7 +35,7 @@ export function DialogProvider({ children }: { children: React.ReactNode }) {
           <item.component
             key={item.id}
             {...item.props}
-            resolve={() => { item.resolve(); close(); }}
+            resolve={(r) => { item.resolve(r); close(); }}
             reject={(r?: unknown) => { item.reject(r); close(); }}
           />
         );

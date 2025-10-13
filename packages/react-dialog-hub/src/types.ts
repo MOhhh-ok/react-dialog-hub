@@ -1,22 +1,22 @@
 
-export type DialogBase = {
-  resolve: () => void;
-  reject: (reason?: unknown) => void;
+export type DialogBase<TResult, TError> = {
+  resolve: (result: TResult) => void;
+  reject: (reason?: TError) => void;
 }
 
-export type DialogProps<P = unknown> = P & DialogBase;
+export type DialogProps<TProps = unknown, TResult = unknown, TError = unknown> = TProps & DialogBase<TResult, TError>;
 
-export type DialogComponent<P> = (props: DialogProps<P>) => React.ReactNode;
+export type DialogComponent<TProps, TResult, TError> = (props: DialogProps<TProps, TResult, TError>) => React.ReactNode;
 
 export type StackItem = {
   id: number;
-  component: DialogComponent<any>;
+  component: DialogComponent<unknown, unknown, unknown>;
   props?: any;
-  resolve: DialogBase['resolve'];
-  reject: DialogBase['reject'];
+  resolve: DialogBase<unknown, unknown>['resolve'];
+  reject: DialogBase<unknown, unknown>['reject'];
 };
 
-export type ShowFn = <P>(comp: DialogComponent<P>, props?: Omit<P, keyof DialogBase>) => Promise<void>;
+export type ShowFn = <TProps, TResult, TError>(comp: DialogComponent<TProps, TResult, TError>, props?: Omit<TProps, keyof DialogBase<TResult, TError>>) => Promise<TResult>;
 
 export type DialogContextValue = {
   show: ShowFn;

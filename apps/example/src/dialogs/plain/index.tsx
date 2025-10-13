@@ -1,5 +1,6 @@
 import { AlertTrigger } from "./Alert";
 import { ConfirmTrigger } from "./Confirm";
+import { PromptTrigger } from "./Prompt";
 
 export function PlainDialogsSection() {
   return <section>
@@ -7,6 +8,7 @@ export function PlainDialogsSection() {
     <div className="triggers">
       <AlertTrigger />
       <ConfirmTrigger />
+      <PromptTrigger />
     </div>
   </section>
 }
