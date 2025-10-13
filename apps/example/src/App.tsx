@@ -6,7 +6,7 @@ import { MUIDialogsSection } from './dialogs/mui';
 import { PlainDialogsSection } from './dialogs/plain';
 import { RadixDialogsSection } from './dialogs/radix';
 
-//
+
 export default function App() {
   return <>
     <Theme>

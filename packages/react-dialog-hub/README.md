@@ -7,7 +7,7 @@ Headless, type-safe dialog orchestration for React. Call dialogs like functions,
 - **Type-safe**: infers `props`, `resolve`, and `reject` types end-to-end
 - **Minimal**: one provider, one hook, a few types
 
-Read the full docs: `https://your-docs-url`
+Read the full docs: `[https://mohhh-ok.github.io/react-dialog-hub/](https://mohhh-ok.github.io/react-dialog-hub/)`
 
 ## Installation
 
@@ -84,7 +84,7 @@ export function DeleteButton() {
 
 ## Examples
 
-- Plain React, MUI, and Radix examples: see docs — `https://your-docs-url`
+- Plain React, MUI, and Radix examples: see docs — `https://mohhh-ok.github.io/react-dialog-hub/`
 
 ## Notes
 
