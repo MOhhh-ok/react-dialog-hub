@@ -1,55 +1,54 @@
-import { themes as prismThemes } from 'prism-react-renderer';
-import type { Config } from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
+import type * as Preset from "@docusaurus/preset-classic";
+import type { Config } from "@docusaurus/types";
+import { themes as prismThemes } from "prism-react-renderer";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'React Dialog Hub',
-  tagline: 'Headless, type-safe dialog orchestration for React',
-  favicon: 'img/favicon.ico',
+  title: "React Dialog Hub",
+  tagline: "Headless, type-safe dialog orchestration for React",
+  favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: false, // Improve compatibility with the upcoming Docusaurus v4
   },
 
   // Set the production url of your site here
-  url: 'https://mohhh-ok.github.io',
+  url: "https://mohhh-ok.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/react-dialog-hub/',
+  baseUrl: "/react-dialog-hub/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'mohhh-ok',
-  projectName: 'react-dialog-hub',
-  deploymentBranch: 'gh-pages',
+  organizationName: "mohhh-ok",
+  projectName: "react-dialog-hub",
+  deploymentBranch: "gh-pages",
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: "throw",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          sidebarPath: './sidebars.ts',
+          sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: false,
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
@@ -57,61 +56,61 @@ const config: Config = {
 
   plugins: [
     [
-      'docusaurus-plugin-typedoc',
+      "docusaurus-plugin-typedoc",
       {
-        entryPoints: ['../../packages/react-dialog-hub/src/index.ts'],
-        tsconfig: '../../packages/react-dialog-hub/tsconfig.typedoc.json',
-        out: 'docs/api',
-        readme: 'none',
+        entryPoints: ["../../packages/react-dialog-hub/src/index.ts"],
+        tsconfig: "../../packages/react-dialog-hub/tsconfig.typedoc.json",
+        out: "docs/api",
+        readme: "none",
       },
     ],
   ],
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: "img/docusaurus-social-card.jpg",
     colorMode: {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'React Dialog Hub',
+      title: "React Dialog Hub",
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: "My Site Logo",
+        src: "img/logo.svg",
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'docs',
-          position: 'left',
-          label: 'Docs',
+          type: "docSidebar",
+          sidebarId: "docs",
+          position: "left",
+          label: "Docs",
         },
-        { to: '/docs/api', label: 'API', position: 'left' },
+        { to: "/docs/api", label: "API", position: "left" },
         {
-          href: 'https://github.com/mohhh-ok/react-dialog-hub',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/mohhh-ok/react-dialog-hub",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
-              label: 'Getting Started',
-              to: '/docs/getting-started',
+              label: "Getting Started",
+              to: "/docs/getting-started",
             },
           ],
         },
         {
-          title: 'More',
+          title: "More",
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/mohhh-ok/react-dialog-hub',
+              label: "GitHub",
+              href: "https://github.com/mohhh-ok/react-dialog-hub",
             },
           ],
         },

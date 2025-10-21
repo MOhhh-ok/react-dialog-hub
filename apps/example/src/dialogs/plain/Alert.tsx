@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { useDialog, type DialogProps } from "react-dialog-hub";
+import { type DialogProps, useDialog } from "react-dialog-hub";
 
 export function Alert(props: DialogProps<{ message: string }>) {
   const { resolve, message } = props;
@@ -7,14 +7,15 @@ export function Alert(props: DialogProps<{ message: string }>) {
 
   useEffect(() => ref.current?.showModal(), []);
 
-  return <dialog ref={ref} >
-    <p>{message}</p>
-    <button onClick={resolve}>OK</button>
-  </dialog>
+  return (
+    <dialog ref={ref}>
+      <p>{message}</p>
+      <button onClick={() => resolve()}>OK</button>
+    </dialog>
+  );
 }
 
 export function AlertTrigger() {
   const { show } = useDialog();
-  return <button onClick={() => show(Alert, { message: 'Hello World!' })}>Alert</button>
+  return <button onClick={() => show(Alert, { message: "Hello World!" })}>Alert</button>;
 }
-

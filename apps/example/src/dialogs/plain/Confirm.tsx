@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
-import { useDialog, type DialogProps } from "react-dialog-hub";
-
+import { type DialogProps, useDialog } from "react-dialog-hub";
 
 export function Confirm(props: DialogProps<{ message: string }>) {
   const { resolve, reject, message } = props;
@@ -8,11 +7,13 @@ export function Confirm(props: DialogProps<{ message: string }>) {
 
   useEffect(() => ref.current?.showModal(), []);
 
-  return <dialog ref={ref} >
-    <p>{message}</p>
-    <button onClick={reject}>Cancel</button>
-    <button onClick={resolve}>OK</button>
-  </dialog>
+  return (
+    <dialog ref={ref}>
+      <p>{message}</p>
+      <button onClick={reject}>Cancel</button>
+      <button onClick={() => resolve()}>OK</button>
+    </dialog>
+  );
 }
 
 export function ConfirmTrigger() {
@@ -20,11 +21,11 @@ export function ConfirmTrigger() {
 
   const handleClick = async () => {
     try {
-      await show(Confirm, { message: 'Hello World!' })
-      alert('OK');
+      await show(Confirm, { message: "Hello World!" });
+      alert("OK");
     } catch (err) {
-      alert('Cancel');
+      alert("Cancel");
     }
-  }
-  return <button onClick={handleClick}>Confirm</button>
+  };
+  return <button onClick={handleClick}>Confirm</button>;
 }
