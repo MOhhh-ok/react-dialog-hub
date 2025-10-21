@@ -2,7 +2,7 @@
 
 > **DialogProps**\<`TProps`, `TResult`, `TError`\> = `TProps` & [`DialogBase`](DialogBase.md)\<`TResult`, `TError`\>
 
-Defined in: [types.ts:7](https://github.com/MOhhh-ok/react-dialog-hub/blob/5673faacf88e76b0990b2083c26229d9de0bb4ca/packages/react-dialog-hub/src/types.ts#L7)
+Defined in: [types.ts:7](https://github.com/MOhhh-ok/react-dialog-hub/blob/82376cfc18edcade8f2ad8d1e630375a85681345/packages/react-dialog-hub/src/types.ts#L7)
 
 ## Type Parameters
 
@@ -12,7 +12,7 @@ Defined in: [types.ts:7](https://github.com/MOhhh-ok/react-dialog-hub/blob/5673f
 
 ### TResult
 
-`TResult` = `unknown`
+`TResult` = `void`
 
 ### TError
 

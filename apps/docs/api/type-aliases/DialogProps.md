@@ -12,7 +12,7 @@ Defined in: [types.ts:7](https://github.com/MOhhh-ok/react-dialog-hub/blob/4594e
 
 ### TResult
 
-`TResult` = `unknown`
+`TResult` = `void`
 
 ### TError
 
