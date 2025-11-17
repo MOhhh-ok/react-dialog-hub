@@ -15,7 +15,7 @@ export type StackItem = {
   reject: DialogBase<unknown, unknown>["reject"];
 };
 
-export type ShowFn = <TProps, TResult, TError>(
+export type ShowFn = <TProps, TResult = void, TError = unknown>(
   comp: DialogComponent<TProps, TResult, TError>,
   props?: Omit<TProps, keyof DialogBase<TResult, TError>>,
 ) => Promise<TResult>;
