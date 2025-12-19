@@ -10,29 +10,29 @@ pnpm add react-dialog-hub
 
 ## Place the Provider
 
-At the root of your app, wrap with `DialogProvider`.
+At the root of your app, wrap with `DialogsProvider`.
 
 ```tsx
-import { DialogProvider } from 'react-dialog-hub';
+import { DialogsProvider } from 'react-dialog-hub';
 
 export function Root() {
   return (
-    <DialogProvider>
+    <DialogsProvider>
       <App />
-    </DialogProvider>
+    </DialogsProvider>
   );
 }
 ```
 
 ## Invoke a Dialog
 
-Use `show()` from `useDialog()` to display any dialog component. The component automatically receives `resolve` and `reject`. Calling `resolve(result)` resolves the Promise.
+Use `show()` from `useDialogs()` to display any dialog component. The component automatically receives `resolve` and `reject`. Calling `resolve(result)` resolves the Promise.
 
 ```tsx
-import { useDialog } from 'react-dialog-hub';
+import { useDialogs } from 'react-dialog-hub';
 
 function Page() {
-  const { show } = useDialog();
+  const { show } = useDialogs();
   const openConfirm = async () => {
     const ok = await show(ConfirmDialog, { message: 'Proceed?' });
     if (ok) {

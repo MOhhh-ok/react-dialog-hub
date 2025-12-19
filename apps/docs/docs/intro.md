@@ -20,22 +20,22 @@ pnpm add react-dialog-hub
 
 ## Quickstart
 
-1. Place `DialogProvider` at the app root
-2. Call `show()` from `useDialog()` to display any dialog component
+1. Place `DialogsProvider` at the app root
+2. Call `show()` from `useDialogs()` to display any dialog component
 
 ```tsx
-import { DialogProvider, useDialog } from 'react-dialog-hub';
+import { DialogsProvider, useDialogs } from 'react-dialog-hub';
 
 function AppRoot() {
   return (
-    <DialogProvider>
+    <DialogsProvider>
       <App />
-    </DialogProvider>
+    </DialogsProvider>
   );
 }
 
 function Example() {
-  const { show } = useDialog();
+  const { show } = useDialogs();
   const onClick = async () => {
     const result = await show(MyConfirmDialog, { message: 'Proceed?' });
     console.log(result);

@@ -16,7 +16,7 @@ Examples:
 
 ```tsx title="apps/example/src/dialogs/mui/Alert.tsx"
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from "@mui/material";
-import { useDialog, type DialogProps } from "react-dialog-hub";
+import { useDialogs, type DialogProps } from "react-dialog-hub";
 
 export function Alert(props: DialogProps<{ message: string }>) {
   const { resolve, message } = props;
@@ -31,8 +31,8 @@ export function Alert(props: DialogProps<{ message: string }>) {
 }
 
 export function AlertTrigger() {
-  const { show } = useDialog();
-  return <button onClick={() => show(Alert, { message: 'Hello World!' })}>Alert</button>
+  const { show } = useDialogs();
+  return <button onClick={() => show(Alert, { message: 'Hello World!' })}>Alert</button>;
 }
 ```
 
@@ -40,7 +40,7 @@ export function AlertTrigger() {
 
 ```tsx title="apps/example/src/dialogs/mui/Confirm.tsx"
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from "@mui/material";
-import { useDialog, type DialogProps } from "react-dialog-hub";
+import { useDialogs, type DialogProps } from "react-dialog-hub";
 
 export function Confirm(props: DialogProps<{ message: string }>) {
   const { resolve, reject, message } = props;
@@ -56,7 +56,7 @@ export function Confirm(props: DialogProps<{ message: string }>) {
 }
 
 export function ConfirmTrigger() {
-  const { show } = useDialog();
+  const { show } = useDialogs();
 
   const handleClick = async () => {
     try {
@@ -76,7 +76,7 @@ export function ConfirmTrigger() {
 ```tsx title="apps/example/src/dialogs/mui/Prompt.tsx"
 import { useState } from "react";
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } from "@mui/material";
-import { useDialog, type DialogProps } from "react-dialog-hub";
+import { useDialogs, type DialogProps } from "react-dialog-hub";
 
 export type PromptProps = {
   message: string;
@@ -101,7 +101,7 @@ export function Prompt(props: DialogProps<PromptProps, string>) {
 }
 
 export function PromptTrigger() {
-  const { show } = useDialog();
+  const { show } = useDialogs();
 
   const handleClick = async () => {
     try {
@@ -124,7 +124,7 @@ export function PromptTrigger() {
 ```tsx title="apps/example/src/dialogs/mui/SelectSingle.tsx"
 import { useState } from "react";
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle, FormControl, FormControlLabel, Radio, RadioGroup } from "@mui/material";
-import { useDialog, type DialogProps } from "react-dialog-hub";
+import { useDialogs, type DialogProps } from "react-dialog-hub";
 
 export type SelectSingleProps = {
   title: string;
@@ -157,7 +157,7 @@ export function SelectSingle(
 }
 
 export function SelectSingleTrigger() {
-  const { show } = useDialog();
+  const { show } = useDialogs();
 
   const handleClick = async () => {
     try {
@@ -181,7 +181,7 @@ export function SelectSingleTrigger() {
 ```tsx title="apps/example/src/dialogs/mui/SelectMulti.tsx"
 import { useState } from "react";
 import { Button, Checkbox, Dialog, DialogActions, DialogContent, DialogTitle, FormControlLabel, FormGroup } from "@mui/material";
-import { useDialog, type DialogProps } from "react-dialog-hub";
+import { useDialogs, type DialogProps } from "react-dialog-hub";
 
 export type SelectMultiProps = {
   title: string;
@@ -226,7 +226,7 @@ export function SelectMulti(
 }
 
 export function SelectMultiTrigger() {
-  const { show } = useDialog();
+  const { show } = useDialogs();
 
   const handleClick = async () => {
     try {
@@ -250,7 +250,7 @@ export function SelectMultiTrigger() {
 ```tsx title="apps/example/src/dialogs/mui/Progress.tsx"
 import { useEffect, useRef, useState } from "react";
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle, LinearProgress, Typography } from "@mui/material";
-import { useDialog, type DialogProps } from "react-dialog-hub";
+import { useDialogs, type DialogProps } from "react-dialog-hub";
 
 const TICK_MS = 50;
 
@@ -306,7 +306,7 @@ export function Progress(
 }
 
 export function ProgressTrigger() {
-  const { show } = useDialog();
+  const { show } = useDialogs();
 
   const handleClick = async () => {
     try {
