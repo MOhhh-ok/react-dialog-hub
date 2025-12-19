@@ -50,9 +50,6 @@ const ok = await show(Confirm, { title: 'Confirm', content: 'Delete?' });
 
 Requires `@mui/material`, `@emotion/react`, and `@emotion/styled`.
 
-### Radix Adapter
-
-Pre-built Radix UI adapter also available at `react-dialog-hub/radix`.
 
 ## Quick Start
 

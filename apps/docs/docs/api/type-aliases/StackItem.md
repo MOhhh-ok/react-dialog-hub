@@ -2,7 +2,7 @@
 
 > **StackItem** = `object`
 
-Defined in: [types.ts:10](https://github.com/MOhhh-ok/react-dialog-hub/blob/a7edf4da2a14cfe4ca98600f76f3ca6fb4d0d3fd/packages/react-dialog-hub/src/types.ts#L10)
+Defined in: [types.ts:10](https://github.com/MOhhh-ok/react-dialog-hub/blob/4aa4bba910aaec24fb967d58b99c8b113f4c0fa0/packages/react-dialog-hub/src/types.ts#L10)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [types.ts:10](https://github.com/MOhhh-ok/react-dialog-hub/blob/a7ed
 
 > **component**: [`DialogComponent`](DialogComponent.md)\<`unknown`, `unknown`, `unknown`\>
 
-Defined in: [types.ts:12](https://github.com/MOhhh-ok/react-dialog-hub/blob/a7edf4da2a14cfe4ca98600f76f3ca6fb4d0d3fd/packages/react-dialog-hub/src/types.ts#L12)
+Defined in: [types.ts:12](https://github.com/MOhhh-ok/react-dialog-hub/blob/4aa4bba910aaec24fb967d58b99c8b113f4c0fa0/packages/react-dialog-hub/src/types.ts#L12)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [types.ts:12](https://github.com/MOhhh-ok/react-dialog-hub/blob/a7ed
 
 > **id**: `number`
 
-Defined in: [types.ts:11](https://github.com/MOhhh-ok/react-dialog-hub/blob/a7edf4da2a14cfe4ca98600f76f3ca6fb4d0d3fd/packages/react-dialog-hub/src/types.ts#L11)
+Defined in: [types.ts:11](https://github.com/MOhhh-ok/react-dialog-hub/blob/4aa4bba910aaec24fb967d58b99c8b113f4c0fa0/packages/react-dialog-hub/src/types.ts#L11)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [types.ts:11](https://github.com/MOhhh-ok/react-dialog-hub/blob/a7ed
 
 > `optional` **props**: `any`
 
-Defined in: [types.ts:13](https://github.com/MOhhh-ok/react-dialog-hub/blob/a7edf4da2a14cfe4ca98600f76f3ca6fb4d0d3fd/packages/react-dialog-hub/src/types.ts#L13)
+Defined in: [types.ts:13](https://github.com/MOhhh-ok/react-dialog-hub/blob/4aa4bba910aaec24fb967d58b99c8b113f4c0fa0/packages/react-dialog-hub/src/types.ts#L13)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [types.ts:13](https://github.com/MOhhh-ok/react-dialog-hub/blob/a7ed
 
 > **reject**: [`DialogBase`](DialogBase.md)\<`unknown`, `unknown`\>\[`"reject"`\]
 
-Defined in: [types.ts:15](https://github.com/MOhhh-ok/react-dialog-hub/blob/a7edf4da2a14cfe4ca98600f76f3ca6fb4d0d3fd/packages/react-dialog-hub/src/types.ts#L15)
+Defined in: [types.ts:15](https://github.com/MOhhh-ok/react-dialog-hub/blob/4aa4bba910aaec24fb967d58b99c8b113f4c0fa0/packages/react-dialog-hub/src/types.ts#L15)
 
 ***
 
@@ -42,4 +42,4 @@ Defined in: [types.ts:15](https://github.com/MOhhh-ok/react-dialog-hub/blob/a7ed
 
 > **resolve**: [`DialogBase`](DialogBase.md)\<`unknown`, `unknown`\>\[`"resolve"`\]
 
-Defined in: [types.ts:14](https://github.com/MOhhh-ok/react-dialog-hub/blob/a7edf4da2a14cfe4ca98600f76f3ca6fb4d0d3fd/packages/react-dialog-hub/src/types.ts#L14)
+Defined in: [types.ts:14](https://github.com/MOhhh-ok/react-dialog-hub/blob/4aa4bba910aaec24fb967d58b99c8b113f4c0fa0/packages/react-dialog-hub/src/types.ts#L14)

@@ -26,7 +26,6 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       link: { type: "generated-index", title: "Examples" },
       items: [
-        "examples/plain",
         "examples/native",
         "examples/radix",
         "examples/mui",
