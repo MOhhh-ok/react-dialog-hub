@@ -21,6 +21,39 @@ yarn add react-dialog-hub
 
 Peer dependency: React ^19.2.0
 
+## Built-in Adapters
+
+React Dialog Hub includes pre-built adapters for common use cases:
+
+### Native Adapter (HTML Dialog)
+
+```tsx
+import { Alert, Confirm, Prompt } from 'react-dialog-hub/native';
+
+const { show } = useDialogs();
+await show(Alert, { content: 'Hello!' });
+const ok = await show(Confirm, { content: 'Proceed?' });
+const name = await show(Prompt, { content: 'Your name?', value: 'John' });
+```
+
+No additional dependencies required. Uses the native HTML `<dialog>` element.
+
+### MUI Adapter (Material-UI)
+
+```tsx
+import { Alert, Confirm, Prompt } from 'react-dialog-hub/mui';
+
+const { show } = useDialogs();
+await show(Alert, { title: 'Notice', content: 'Done!' });
+const ok = await show(Confirm, { title: 'Confirm', content: 'Delete?' });
+```
+
+Requires `@mui/material`, `@emotion/react`, and `@emotion/styled`.
+
+### Radix Adapter
+
+Pre-built Radix UI adapter also available at `react-dialog-hub/radix`.
+
 ## Quick Start
 
 1) Wrap your app with the provider
@@ -84,7 +117,8 @@ export function DeleteButton() {
 
 ## Examples
 
-- Plain React, MUI, and Radix examples: see docs — https://mohhh-ok.github.io/react-dialog-hub
+- Native, MUI, Radix, and custom dialog examples: see docs — https://mohhh-ok.github.io/react-dialog-hub
+- Use built-in adapters for quick setup, or create custom dialogs with any UI library
 
 ## Notes
 

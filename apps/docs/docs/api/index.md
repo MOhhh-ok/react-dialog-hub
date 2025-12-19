@@ -15,5 +15,5 @@
 
 ## Functions
 
-- [DialogsProvider](functions/DialogsProvider.md)
+- [DialogProvider](functions/DialogProvider.md)
 - [useDialogs](functions/useDialogs.md)
