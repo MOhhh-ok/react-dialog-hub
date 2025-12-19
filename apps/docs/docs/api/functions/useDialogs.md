@@ -2,7 +2,7 @@
 
 > **useDialogs**(): [`DialogContextValue`](../type-aliases/DialogContextValue.md)
 
-Defined in: [context.ts:6](https://github.com/MOhhh-ok/react-dialog-hub/blob/294a64aaf23b8e327b1fba576c61d4697ebc096d/packages/react-dialog-hub/src/context.ts#L6)
+Defined in: [context.ts:6](https://github.com/MOhhh-ok/react-dialog-hub/blob/5695ffd437dd9d4b070afc9115113f3408062419/packages/react-dialog-hub/src/context.ts#L6)
 
 ## Returns
 

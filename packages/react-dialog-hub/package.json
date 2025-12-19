@@ -2,6 +2,48 @@
   "name": "react-dialog-hub",
   "version": "0.1.1",
   "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./native": {
+      "import": {
+        "types": "./dist/adapters/native/index.d.ts",
+        "default": "./dist/adapters/native/index.js"
+      },
+      "require": {
+        "types": "./dist/adapters/native/index.d.cts",
+        "default": "./dist/adapters/native/index.cjs"
+      }
+    },
+    "./mui": {
+      "import": {
+        "types": "./dist/adapters/mui/index.d.ts",
+        "default": "./dist/adapters/mui/index.js"
+      },
+      "require": {
+        "types": "./dist/adapters/mui/index.d.cts",
+        "default": "./dist/adapters/mui/index.cjs"
+      }
+    },
+    "./radix": {
+      "import": {
+        "types": "./dist/adapters/radix/index.d.ts",
+        "default": "./dist/adapters/radix/index.js"
+      },
+      "require": {
+        "types": "./dist/adapters/radix/index.d.cts",
+        "default": "./dist/adapters/radix/index.cjs"
+      }
+    }
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
@@ -15,10 +57,29 @@
     "prepublishOnly": "pnpm build"
   },
   "peerDependencies": {
+    "react": "^19.2.0",
+    "@mui/material": "^7.3.5",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
-    "@mui/material": "^7.3.5",
-    "react": "^19.2.0"
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/themes": "^3.2.1"
+  },
+  "peerDependenciesMeta": {
+    "@mui/material": {
+      "optional": true
+    },
+    "@emotion/react": {
+      "optional": true
+    },
+    "@emotion/styled": {
+      "optional": true
+    },
+    "@radix-ui/react-dialog": {
+      "optional": true
+    },
+    "@radix-ui/themes": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@types/react": "^19.2.7",

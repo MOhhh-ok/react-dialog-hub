@@ -2,7 +2,7 @@
 
 > **DialogContextValue** = `object`
 
-Defined in: [types.ts:23](https://github.com/MOhhh-ok/react-dialog-hub/blob/294a64aaf23b8e327b1fba576c61d4697ebc096d/packages/react-dialog-hub/src/types.ts#L23)
+Defined in: [types.ts:23](https://github.com/MOhhh-ok/react-dialog-hub/blob/5695ffd437dd9d4b070afc9115113f3408062419/packages/react-dialog-hub/src/types.ts#L23)
 
 ## Properties
 
@@ -10,4 +10,4 @@ Defined in: [types.ts:23](https://github.com/MOhhh-ok/react-dialog-hub/blob/294a
 
 > **show**: [`ShowFn`](ShowFn.md)
 
-Defined in: [types.ts:24](https://github.com/MOhhh-ok/react-dialog-hub/blob/294a64aaf23b8e327b1fba576c61d4697ebc096d/packages/react-dialog-hub/src/types.ts#L24)
+Defined in: [types.ts:24](https://github.com/MOhhh-ok/react-dialog-hub/blob/5695ffd437dd9d4b070afc9115113f3408062419/packages/react-dialog-hub/src/types.ts#L24)
