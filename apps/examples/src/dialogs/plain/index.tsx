@@ -8,7 +8,7 @@ export function PlainDialogsSection() {
   const { show } = useDialogs();
   return (
     <section>
-      <h2>Plain Dialogs</h2>
+      <h2>Native Dialogs</h2>
       <div className="triggers">
         <button onClick={() => show(Alert, { content: "Hello World!" })}>
           Alert

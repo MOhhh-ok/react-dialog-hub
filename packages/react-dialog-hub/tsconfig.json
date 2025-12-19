@@ -21,11 +21,16 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
+    "rootDir": "./src",
     "outDir": "./dist",
     "declaration": true,
-    "declarationMap": true,
+    "declarationMap": true
   },
   "include": [
     "src"
   ],
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
 }
