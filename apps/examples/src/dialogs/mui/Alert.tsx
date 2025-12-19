@@ -1,5 +1,5 @@
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from "@mui/material";
-import { type DialogProps, useDialog } from "react-dialog-hub";
+import { type DialogProps, useDialogs } from "react-dialog-hub";
 
 export function Alert(props: DialogProps<{ message: string }>) {
   const { resolve, message } = props;
@@ -16,6 +16,6 @@ export function Alert(props: DialogProps<{ message: string }>) {
 }
 
 export function AlertTrigger() {
-  const { show } = useDialog();
+  const { show } = useDialogs();
   return <button onClick={() => show(Alert, { message: "Hello World!" })}>Alert</button>;
 }

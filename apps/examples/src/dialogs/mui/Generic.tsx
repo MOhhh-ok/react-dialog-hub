@@ -1,5 +1,5 @@
 // import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from "@mui/material";
-// import { type DialogProps, useDialog } from "react-dialog-hub";
+// import { type DialogProps, useDialogs} from "react-dialog-hub";
 
 // type GenericDialogProps<K extends string> = DialogProps<{ labels: Record<K, string> }>;
 
@@ -17,7 +17,7 @@
 // }
 
 // export function GenericTrigger() {
-//   const { show } = useDialog();
+//   const { show } = useDialogs);
 //   const keys = ["abc"] as const;
 //   return (
 //     <button

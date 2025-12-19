@@ -1,5 +1,5 @@
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from "@mui/material";
-import { type DialogProps, useDialog } from "react-dialog-hub";
+import { type DialogProps, useDialogs } from "react-dialog-hub";
 
 export function Confirm(props: DialogProps<{ message: string }>) {
   const { resolve, reject, message } = props;
@@ -17,7 +17,7 @@ export function Confirm(props: DialogProps<{ message: string }>) {
 }
 
 export function ConfirmTrigger() {
-  const { show } = useDialog();
+  const { show } = useDialogs();
 
   const handleClick = async () => {
     try {

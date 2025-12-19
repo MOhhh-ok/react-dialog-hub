@@ -3,7 +3,7 @@ import type { DialogContextValue } from "./types";
 
 export const DialogContext = createContext<DialogContextValue | null>(null);
 
-export function useDialog() {
+export function useDialogs() {
   const ctx = useContext(DialogContext);
   if (!ctx) throw new Error("useDialog must be used within DialogProvider");
   return ctx;
