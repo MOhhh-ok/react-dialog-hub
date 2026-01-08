@@ -58,8 +58,8 @@ const config: Config = {
     [
       "docusaurus-plugin-typedoc",
       {
-        entryPoints: ["../../packages/react-dialog-hub/src/index.ts"],
-        tsconfig: "../../packages/react-dialog-hub/tsconfig.typedoc.json",
+        entryPoints: ["../src/index.ts"],
+        tsconfig: "../tsconfig.typedoc.json",
         out: "docs/api",
         readme: "none",
       },
