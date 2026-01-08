@@ -33,10 +33,10 @@ jobs:
         run: bun run build
 
       - name: Install deps (docs)
-        run: bun install --cwd docs --frozen-lockfile
+        run: cd docs && bun install --frozen-lockfile
 
       - name: Build docs
-        run: bun --cwd docs run build
+        run: cd docs && bun run build
 
       - name: Verify build directory
         run: |
