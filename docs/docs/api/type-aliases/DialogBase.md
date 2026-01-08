@@ -2,7 +2,7 @@
 
 > **DialogBase**\<`TResult`, `TError`\> = `object`
 
-Defined in: types.ts:1
+Defined in: [types.ts:1](https://github.com/MOhhh-ok/react-dialog-hub/blob/24643f0838f2500fb15b3cbd01158cfca6d08a7d/src/types.ts#L1)
 
 ## Type Parameters
 
@@ -20,7 +20,7 @@ Defined in: types.ts:1
 
 > **reject**: (`reason?`) => `void`
 
-Defined in: types.ts:3
+Defined in: [types.ts:3](https://github.com/MOhhh-ok/react-dialog-hub/blob/24643f0838f2500fb15b3cbd01158cfca6d08a7d/src/types.ts#L3)
 
 #### Parameters
 
@@ -38,7 +38,7 @@ Defined in: types.ts:3
 
 > **resolve**: (`result`) => `void`
 
-Defined in: types.ts:2
+Defined in: [types.ts:2](https://github.com/MOhhh-ok/react-dialog-hub/blob/24643f0838f2500fb15b3cbd01158cfca6d08a7d/src/types.ts#L2)
 
 #### Parameters
 

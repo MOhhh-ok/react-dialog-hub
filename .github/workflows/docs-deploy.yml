@@ -38,6 +38,15 @@ jobs:
       - name: Build docs
         run: bun --cwd docs run build
 
+      - name: Verify build directory
+        run: |
+          if [ ! -d "docs/build" ]; then
+            echo "Error: docs/build directory does not exist"
+            exit 1
+          fi
+          echo "Build directory contents:"
+          ls -la docs/build
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
@@ -49,6 +58,9 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
