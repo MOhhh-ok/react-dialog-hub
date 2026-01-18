@@ -54,6 +54,10 @@ const config: Config = {
     ],
   ],
 
+  clientModules: [
+    require.resolve("./src/redirects.ts"),
+  ],
+
   plugins: [
     [
       "docusaurus-plugin-typedoc",
