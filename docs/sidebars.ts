@@ -15,7 +15,7 @@ import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
 const sidebars: SidebarsConfig = {
   docs: [
     // High-level entry
-    "intro",
+    "index",
     "getting-started",
     "comparison",
 

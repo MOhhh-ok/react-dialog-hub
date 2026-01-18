@@ -41,6 +41,7 @@ const config: Config = {
       "classic",
       {
         docs: {
+          routeBasePath: "/",
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -52,10 +53,6 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
-  ],
-
-  clientModules: [
-    require.resolve("./src/redirects.ts"),
   ],
 
   plugins: [
@@ -89,7 +86,7 @@ const config: Config = {
           position: "left",
           label: "Docs",
         },
-        { to: "/docs/api", label: "API", position: "left" },
+        { to: "/api", label: "API", position: "left" },
         {
           href: "https://github.com/mohhh-ok/react-dialog-hub",
           label: "GitHub",
@@ -105,7 +102,7 @@ const config: Config = {
           items: [
             {
               label: "Getting Started",
-              to: "/docs/getting-started",
+              to: "/getting-started",
             },
           ],
         },

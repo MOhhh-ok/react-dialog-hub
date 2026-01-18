@@ -2,7 +2,7 @@
 
 > **DialogBase**\<`TResult`, `TError`\> = `object`
 
-Defined in: [types.ts:1](https://github.com/MOhhh-ok/react-dialog-hub/blob/899b5bf70fbd5296a2cbf8f5c5c68c85a8952cc9/src/types.ts#L1)
+Defined in: [types.ts:1](https://github.com/MOhhh-ok/react-dialog-hub/blob/d84c8ec2b982fbcb0b49725d824032999648eda8/src/types.ts#L1)
 
 ## Type Parameters
 
@@ -20,7 +20,7 @@ Defined in: [types.ts:1](https://github.com/MOhhh-ok/react-dialog-hub/blob/899b5
 
 > **reject**: (`reason?`) => `void`
 
-Defined in: [types.ts:3](https://github.com/MOhhh-ok/react-dialog-hub/blob/899b5bf70fbd5296a2cbf8f5c5c68c85a8952cc9/src/types.ts#L3)
+Defined in: [types.ts:3](https://github.com/MOhhh-ok/react-dialog-hub/blob/d84c8ec2b982fbcb0b49725d824032999648eda8/src/types.ts#L3)
 
 #### Parameters
 
@@ -38,7 +38,7 @@ Defined in: [types.ts:3](https://github.com/MOhhh-ok/react-dialog-hub/blob/899b5
 
 > **resolve**: (`result`) => `void`
 
-Defined in: [types.ts:2](https://github.com/MOhhh-ok/react-dialog-hub/blob/899b5bf70fbd5296a2cbf8f5c5c68c85a8952cc9/src/types.ts#L2)
+Defined in: [types.ts:2](https://github.com/MOhhh-ok/react-dialog-hub/blob/d84c8ec2b982fbcb0b49725d824032999648eda8/src/types.ts#L2)
 
 #### Parameters
 
