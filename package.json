@@ -66,14 +66,14 @@
     "@radix-ui/themes": "^3.2.1"
   },
   "devDependencies": {
-    "react": "^19.2.0",
-    "@mui/material": "^7.3.5",
+    "react": "^19.2.3",
+    "@mui/material": "^7.3.7",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@radix-ui/react-dialog": "^1.1.15",
     "@radix-ui/themes": "^3.2.1",
-    "@types/react": "^19.2.7",
-    "release-it": "^19.1.0",
+    "@types/react": "^19.2.8",
+    "release-it": "^19.2.3",
     "typescript": "^5.9.3"
   },
   "peerDependenciesMeta": {
