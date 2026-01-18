@@ -8,7 +8,7 @@ type Input = {
 
 export type AlertProps = DialogProps<Input>;
 
-export function Alert({ content, resolve, className }: AlertProps) {
+export function AlertDialog({ content, resolve, className }: AlertProps) {
   const ref = useRef<HTMLDialogElement>(null);
 
   useEffect(() => ref.current?.showModal(), []);

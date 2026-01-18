@@ -5,7 +5,7 @@ type Input = { content: ReactNode; className?: string };
 type Output = boolean;
 export type ConfirmProps = DialogProps<Input, Output>;
 
-export function Confirm({ content, className, resolve }: ConfirmProps) {
+export function ConfirmDialog({ content, className, resolve }: ConfirmProps) {
   const ref = useRef<HTMLDialogElement>(null);
 
   useEffect(() => ref.current?.showModal(), []);

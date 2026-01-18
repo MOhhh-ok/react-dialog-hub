@@ -6,7 +6,7 @@ type Input = { title?: ReactNode; content?: ReactNode };
 type Output = boolean;
 export type ConfirmProps = DialogProps<Input, Output>;
 
-export function Confirm({ resolve, content, title }: ConfirmProps) {
+export function ConfirmDialog({ resolve, content, title }: ConfirmProps) {
   return (
     <Dialog open>
       {title && <DialogTitle>{title}</DialogTitle>}

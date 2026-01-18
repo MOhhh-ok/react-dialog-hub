@@ -8,7 +8,7 @@ type Input = {
 };
 export type AlertProps = DialogProps<Input>;
 
-export function Alert({ title, content, resolve }: AlertProps) {
+export function AlertDialog({ title, content, resolve }: AlertProps) {
   return (
     <Dialog open>
       {title && <DialogTitle>{title}</DialogTitle>}

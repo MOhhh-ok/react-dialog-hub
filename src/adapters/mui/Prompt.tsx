@@ -6,7 +6,7 @@ type Input = { title?: ReactNode; content?: ReactNode; value?: string };
 type Output = string | undefined;
 export type PromptProps = DialogProps<Input, Output>;
 
-export function Prompt({ title, content, value, resolve }: PromptProps) {
+export function PromptDialog({ title, content, value, resolve }: PromptProps) {
   const [draft, setDraft] = useState(value);
 
   return (

@@ -8,7 +8,7 @@ type Input = {
 type Output = string | undefined;
 export type PromptProps = DialogProps<Input, Output>;
 
-export function Prompt({ content, value, resolve }: PromptProps) {
+export function PromptDialog({ content, value, resolve }: PromptProps) {
   const [draft, setDraft] = useState(value);
   const ref = useRef<HTMLDialogElement>(null);
 

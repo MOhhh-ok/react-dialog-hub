@@ -1,5 +1,5 @@
 import { useCallback, useMemo, useState } from "react";
-import { DialogContext } from "./context";
+import { DialogsContext } from "./context";
 import type { DialogBase, DialogComponent, DialogContextValue, StackItem } from "./types";
 
 export function DialogsProvider({ children }: { children: React.ReactNode }) {
@@ -26,7 +26,7 @@ export function DialogsProvider({ children }: { children: React.ReactNode }) {
   const value = useMemo<DialogContextValue>(() => ({ show }), [show]);
 
   return (
-    <DialogContext.Provider value={value}>
+    <DialogsContext.Provider value={value}>
       {children}
       {stack.map((item) => {
         const close = () => setStack((s) => s.filter((x) => x.id !== item.id));
@@ -45,6 +45,6 @@ export function DialogsProvider({ children }: { children: React.ReactNode }) {
           />
         );
       })}
-    </DialogContext.Provider>
+    </DialogsContext.Provider>
   );
 }
