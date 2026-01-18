@@ -1,5 +1,5 @@
 import { useDialogs } from "react-dialog-hub";
-import { Alert, Confirm, Prompt } from "react-dialog-hub/mui";
+import { AlertDialog, ConfirmDialog, PromptDialog } from "react-dialog-hub/mui";
 import { ProgressTrigger } from "./Progress";
 import { SelectMultiTrigger } from "./SelectMulti";
 import { SelectSingleTrigger } from "./SelectSingle";
@@ -11,14 +11,14 @@ export function MUIDialogsSection() {
       <h2>MUI Dialogs</h2>
       <div className="triggers">
         <button
-          onClick={() => show(Alert, { content: "Hello World!" })}
+          onClick={() => show(AlertDialog, { content: "Hello World!" })}
         >
           Alert
         </button>
 
         <button
           onClick={async () => {
-            const confirmed = await show(Confirm, { content: "Proceed?" });
+            const confirmed = await show(ConfirmDialog, { content: "Proceed?" });
             if (confirmed) alert("Confirmed!");
           }}
         >
@@ -27,7 +27,7 @@ export function MUIDialogsSection() {
 
         <button
           onClick={async () => {
-            const response = await show(Prompt, { content: "What pet do you like?" });
+            const response = await show(PromptDialog, { content: "What pet do you like?" });
             if (response) alert(`You like ${response}!`);
           }}
         >

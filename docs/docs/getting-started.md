@@ -42,18 +42,18 @@ The easiest way to get started is using the built-in adapters:
 
 ```tsx
 import { useDialogs } from 'react-dialog-hub';
-import { Alert, Confirm, Prompt } from 'react-dialog-hub/native';
+import { AlertDialog, ConfirmDialog, PromptDialog } from 'react-dialog-hub/native';
 
 function Page() {
   const { show } = useDialogs();
 
-  const handleAlert = () => show(Alert, { content: 'Hello!' });
+  const handleAlert = () => show(AlertDialog, { content: 'Hello!' });
   const handleConfirm = async () => {
-    const ok = await show(Confirm, { content: 'Proceed?' });
+    const ok = await show(ConfirmDialog, { content: 'Proceed?' });
     console.log(ok ? 'Confirmed' : 'Cancelled');
   };
   const handlePrompt = async () => {
-    const name = await show(Prompt, { content: 'Your name?', value: 'John' });
+    const name = await show(PromptDialog, { content: 'Your name?', value: 'John' });
     if (name) console.log('Name:', name);
   };
 
@@ -71,18 +71,18 @@ function Page() {
 
 ```tsx
 import { useDialogs } from 'react-dialog-hub';
-import { Alert, Confirm, Prompt } from 'react-dialog-hub/mui';
+import { AlertDialog, ConfirmDialog, PromptDialog } from 'react-dialog-hub/mui';
 
 function Page() {
   const { show } = useDialogs();
 
-  const handleAlert = () => show(Alert, { 
+  const handleAlert = () => show(AlertDialog, { 
     title: 'Notice', 
     content: 'Operation completed!' 
   });
   
   const handleConfirm = async () => {
-    const ok = await show(Confirm, { 
+    const ok = await show(ConfirmDialog, { 
       title: 'Confirm', 
       content: 'Delete this item?' 
     });

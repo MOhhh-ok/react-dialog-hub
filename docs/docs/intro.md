@@ -30,15 +30,15 @@ pnpm add @mui/material @emotion/react @emotion/styled
 Get started quickly with pre-built dialog components:
 
 ```tsx
-import { Alert, Confirm, Prompt } from 'react-dialog-hub/native';
+import { AlertDialog, ConfirmDialog, PromptDialog } from 'react-dialog-hub/native';
 // or
-import { Alert, Confirm, Prompt } from 'react-dialog-hub/mui';
+import { AlertDialog, ConfirmDialog, PromptDialog } from 'react-dialog-hub/mui';
 // or
-import { Alert, Confirm, Prompt } from 'react-dialog-hub/radix';
+import { AlertDialog, ConfirmDialog, PromptDialog } from 'react-dialog-hub/radix';
 
 const { show } = useDialogs();
-await show(Alert, { content: 'Hello!' });
-const ok = await show(Confirm, { content: 'Proceed?' });
+await show(AlertDialog, { content: 'Hello!' });
+const ok = await show(ConfirmDialog, { content: 'Proceed?' });
 ```
 
 See the **Examples** section for detailed usage of each adapter.

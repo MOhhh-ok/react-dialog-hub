@@ -12,24 +12,24 @@ No additional installation required - the native adapter is included with `react
 ## Import
 
 ```tsx
-import { Alert, Confirm, Prompt } from 'react-dialog-hub/native';
+import { AlertDialog, ConfirmDialog, PromptDialog } from 'react-dialog-hub/native';
 ```
 
 ## Components
 
-### Alert
+### AlertDialog
 
 A simple alert dialog with a single OK button.
 
 ```tsx
 import { useDialogs } from 'react-dialog-hub';
-import { Alert } from 'react-dialog-hub/native';
+import { AlertDialog } from 'react-dialog-hub/native';
 
 function MyComponent() {
   const { show } = useDialogs();
 
   const handleClick = async () => {
-    await show(Alert, {
+    await show(AlertDialog, {
       content: 'This is an alert message!',
       className: 'my-dialog-class'
     });
@@ -43,19 +43,19 @@ function MyComponent() {
 - `content: ReactNode` - The content to display in the alert
 - `className?: string` - Optional CSS class for the dialog element
 
-### Confirm
+### ConfirmDialog
 
 A confirmation dialog with Cancel and OK buttons. Returns `true` or `false`.
 
 ```tsx
 import { useDialogs } from 'react-dialog-hub';
-import { Confirm } from 'react-dialog-hub/native';
+import { ConfirmDialog } from 'react-dialog-hub/native';
 
 function MyComponent() {
   const { show } = useDialogs();
 
   const handleClick = async () => {
-    const confirmed = await show(Confirm, {
+    const confirmed = await show(ConfirmDialog, {
       content: 'Are you sure you want to proceed?',
       className: 'my-dialog-class'
     });
@@ -77,19 +77,19 @@ function MyComponent() {
 
 **Returns:** `boolean` - `true` if OK is clicked, `false` if Cancel is clicked
 
-### Prompt
+### PromptDialog
 
 A prompt dialog with an input field, Cancel and OK buttons. Returns the input value or `undefined`.
 
 ```tsx
 import { useDialogs } from 'react-dialog-hub';
-import { Prompt } from 'react-dialog-hub/native';
+import { PromptDialog } from 'react-dialog-hub/native';
 
 function MyComponent() {
   const { show } = useDialogs();
 
   const handleClick = async () => {
-    const result = await show(Prompt, {
+    const result = await show(PromptDialog, {
       content: 'What is your name?',
       value: 'Default Name'
     });

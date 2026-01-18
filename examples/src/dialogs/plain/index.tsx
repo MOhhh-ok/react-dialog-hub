@@ -1,5 +1,5 @@
 import { useDialogs } from "react-dialog-hub";
-import { Alert, Confirm, Prompt } from "react-dialog-hub/native";
+import { AlertDialog, ConfirmDialog, PromptDialog } from "react-dialog-hub/native";
 import { ProgressTrigger } from "./Progress";
 import { SelectMultiTrigger } from "./SelectMulti";
 import { SelectSingleTrigger } from "./SelectSingle";
@@ -10,13 +10,13 @@ export function PlainDialogsSection() {
     <section>
       <h2>Native Dialogs</h2>
       <div className="triggers">
-        <button onClick={() => show(Alert, { content: "Hello World!" })}>
+        <button onClick={() => show(AlertDialog, { content: "Hello World!" })}>
           Alert
         </button>
 
         <button
           onClick={() =>
-            show(Alert, {
+            show(AlertDialog, {
               content: (
                 <div>
                   Hello <span style={{ color: "red" }}>World!</span>
@@ -29,7 +29,7 @@ export function PlainDialogsSection() {
 
         <button
           onClick={async () => {
-            const confirmed = await show(Confirm, { content: "Proceed?" });
+            const confirmed = await show(ConfirmDialog, { content: "Proceed?" });
             if (confirmed) {
               alert("Confirmed!");
             }
@@ -40,7 +40,7 @@ export function PlainDialogsSection() {
 
         <button
           onClick={async () => {
-            const response = await show(Prompt, { content: "What pet do you like?" });
+            const response = await show(PromptDialog, { content: "What pet do you like?" });
             if (response !== undefined) {
               alert(`You like ${response}!`);
             }

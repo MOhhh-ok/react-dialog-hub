@@ -16,24 +16,24 @@ npm install @mui/material @emotion/react @emotion/styled
 ## Import
 
 ```tsx
-import { Alert, Confirm, Prompt } from 'react-dialog-hub/mui';
+import { AlertDialog, ConfirmDialog, PromptDialog } from 'react-dialog-hub/mui';
 ```
 
 ## Components
 
-### Alert
+### AlertDialog
 
 A simple alert dialog with a single OK button, using MUI's Dialog component.
 
 ```tsx
 import { useDialogs } from 'react-dialog-hub';
-import { Alert } from 'react-dialog-hub/mui';
+import { AlertDialog } from 'react-dialog-hub/mui';
 
 function MyComponent() {
   const { show } = useDialogs();
 
   const handleClick = async () => {
-    await show(Alert, {
+    await show(AlertDialog, {
       title: 'Alert',
       content: 'This is an alert message!'
     });
@@ -47,19 +47,19 @@ function MyComponent() {
 - `title?: ReactNode` - Optional title for the dialog
 - `content?: ReactNode` - The content to display in the dialog body
 
-### Confirm
+### ConfirmDialog
 
 A confirmation dialog with Cancel and OK buttons. Returns `true` or `false`.
 
 ```tsx
 import { useDialogs } from 'react-dialog-hub';
-import { Confirm } from 'react-dialog-hub/mui';
+import { ConfirmDialog } from 'react-dialog-hub/mui';
 
 function MyComponent() {
   const { show } = useDialogs();
 
   const handleClick = async () => {
-    const confirmed = await show(Confirm, {
+    const confirmed = await show(ConfirmDialog, {
       title: 'Confirm Action',
       content: 'Are you sure you want to proceed?'
     });
@@ -81,19 +81,19 @@ function MyComponent() {
 
 **Returns:** `boolean` - `true` if OK is clicked, `false` if Cancel is clicked
 
-### Prompt
+### PromptDialog
 
 A prompt dialog with an input field, Cancel and OK buttons. Returns the input value or `undefined`.
 
 ```tsx
 import { useDialogs } from 'react-dialog-hub';
-import { Prompt } from 'react-dialog-hub/mui';
+import { PromptDialog } from 'react-dialog-hub/mui';
 
 function MyComponent() {
   const { show } = useDialogs();
 
   const handleClick = async () => {
-    const result = await show(Prompt, {
+    const result = await show(PromptDialog, {
       title: 'Enter Your Name',
       content: 'Please provide your name:',
       value: 'John Doe'

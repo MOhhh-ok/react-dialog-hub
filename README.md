@@ -28,12 +28,12 @@ React Dialog Hub includes pre-built adapters for common use cases:
 ### Native Adapter (HTML Dialog)
 
 ```tsx
-import { Alert, Confirm, Prompt } from 'react-dialog-hub/native';
+import { AlertDialog, ConfirmDialog, PromptDialog } from 'react-dialog-hub/native';
 
 const { show } = useDialogs();
-await show(Alert, { content: 'Hello!' });
-const ok = await show(Confirm, { content: 'Proceed?' });
-const name = await show(Prompt, { content: 'Your name?', value: 'John' });
+await show(AlertDialog, { content: 'Hello!' });
+const ok = await show(ConfirmDialog, { content: 'Proceed?' });
+const name = await show(PromptDialog, { content: 'Your name?', value: 'John' });
 ```
 
 No additional dependencies required. Uses the native HTML `<dialog>` element.
@@ -41,11 +41,11 @@ No additional dependencies required. Uses the native HTML `<dialog>` element.
 ### MUI Adapter (Material-UI)
 
 ```tsx
-import { Alert, Confirm, Prompt } from 'react-dialog-hub/mui';
+import { AlertDialog, ConfirmDialog, PromptDialog } from 'react-dialog-hub/mui';
 
 const { show } = useDialogs();
-await show(Alert, { title: 'Notice', content: 'Done!' });
-const ok = await show(Confirm, { title: 'Confirm', content: 'Delete?' });
+await show(AlertDialog, { title: 'Notice', content: 'Done!' });
+const ok = await show(ConfirmDialog, { title: 'Confirm', content: 'Delete?' });
 ```
 
 Requires `@mui/material`, `@emotion/react`, and `@emotion/styled`.
@@ -88,11 +88,11 @@ export function ConfirmDialog({ message, resolve, reject }: DialogProps<ConfirmP
 3) Show it from anywhere
 
 ```tsx
-import { useDialog } from "react-dialog-hub";
+import { useDialogs } from "react-dialog-hub";
 import { ConfirmDialog } from "./ConfirmDialog";
 
 export function DeleteButton() {
-  const { show } = useDialog();
+  const { show } = useDialogs();
 
   async function onClick() {
     const ok = await show(ConfirmDialog, { message: "Delete this item?" });

@@ -11,7 +11,7 @@
 
 ## Variables
 
-- [DialogContext](variables/DialogContext.md)
+- [DialogsContext](variables/DialogsContext.md)
 
 ## Functions
 
