@@ -21,6 +21,14 @@ yarn add react-dialog-hub
 
 Peer dependency: React ^19.2.0
 
+## Agent Skills
+
+Works with Claude Code, Cursor, OpenCode, Aider, and [other agents](https://add-skill.org/).
+
+```bash
+npx skills add mohhh-ok/react-dialog-hub
+```
+
 ## Built-in Adapters
 
 React Dialog Hub includes pre-built adapters for common use cases:
