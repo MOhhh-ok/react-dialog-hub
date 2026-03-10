@@ -1,10 +1,11 @@
 ---
 name: react-dialog-hub
 description: >
-  Use this skill when the user mentions dialogs, modals, popups, overlays, confirmations,
-  prompts, or alerts in a React project using the react-dialog-hub package.
-  Also triggers when the user asks to create a dialog component, set up DialogsProvider,
-  call a dialog with await/show, or integrate dialogs with MUI, Radix UI, or HTML dialog elements.
+  Use this skill whenever creating, adding, or modifying any dialog, modal, popup, overlay,
+  confirmation, prompt, or alert component in this codebase. This project uses react-dialog-hub
+  as the standard dialog pattern — always prefer show()/resolve() over useState+onClose callback
+  patterns. Also triggers when setting up DialogsProvider, integrating dialogs with MUI, Radix UI,
+  or HTML dialog elements, or when the user explicitly mentions react-dialog-hub.
 allowed-tools: Read, Write, Edit, Glob, Grep
 ---
 
