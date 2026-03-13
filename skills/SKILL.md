@@ -4,8 +4,11 @@ description: >
   Use this skill whenever creating, adding, or modifying any dialog, modal, popup, overlay,
   confirmation, prompt, or alert component in this codebase. This project uses react-dialog-hub
   as the standard dialog pattern — always prefer show()/resolve() over useState+onClose callback
-  patterns. Also triggers when setting up DialogsProvider, integrating dialogs with MUI, Radix UI,
-  or HTML dialog elements, or when the user explicitly mentions react-dialog-hub.
+  patterns. Also triggers when: setting up DialogsProvider; integrating dialogs with MUI, Radix UI,
+  or HTML dialog elements; the user explicitly mentions react-dialog-hub; implementing a multi-step
+  confirmation flow with useState (e.g. step: "idle" | "confirming", isConfirming, showConfirm) —
+  these should be dialogs, not inline conditional renders; adding a "confirm before execute" pattern
+  to a form or action button.
 allowed-tools: Read, Write, Edit, Glob, Grep
 ---
 
