@@ -5,10 +5,10 @@ description: >
   confirmation, prompt, or alert component in this codebase. This project uses react-dialog-hub
   as the standard dialog pattern — always prefer show()/resolve() over useState+onClose callback
   patterns. Also triggers when: setting up DialogsProvider; integrating dialogs with MUI, Radix UI,
-  or HTML dialog elements; the user explicitly mentions react-dialog-hub; implementing a multi-step
-  confirmation flow with useState (e.g. step: "idle" | "confirming", isConfirming, showConfirm) —
-  these should be dialogs, not inline conditional renders; adding a "confirm before execute" pattern
-  to a form or action button.
+  or HTML dialog elements; the user explicitly mentions react-dialog-hub; adding a "confirm before
+  execute" step to a form or action (e.g. step: "idle" | "confirming", isConfirming, showConfirm)
+  — these confirmation-only states should be dialogs, not inline conditional renders. Does NOT
+  trigger for general wizard/stepper UIs, multi-page forms, or tab navigation with step state.
 allowed-tools: Read, Write, Edit, Glob, Grep
 ---
 
